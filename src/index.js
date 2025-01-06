@@ -29,7 +29,7 @@ const [xIsNext, setXIsNext] = useState(true);
 const handleClickEvent = (i) =>{
   // 1. make a copy square state array
   const newSquares =[...squares];
-// returning early from a function - in this case is done so that once the game is done the X and Os will not be anymore updated
+// returning early from a function - in this case it is done so that once the game is done the X and Os will not be updated
 // and also not to update the state or the block that has already be assigned with X or O
 const winnerDeclared = calculateWinner(newSquares);
 const SquareFilled = Boolean(newSquares[i]);
